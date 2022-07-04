@@ -27,11 +27,8 @@ func main() {
 	flag.Parse()
 
 	var s http.Server = http.Server{
-		Addr:              ":https",
-		Handler:           &Buttercup{},
-		ReadTimeout:       10,
-		ReadHeaderTimeout: 10,
-		IdleTimeout:       10,
+		Addr:    ":https",
+		Handler: &Buttercup{},
 	}
 
 	done := func() <-chan struct{} {
