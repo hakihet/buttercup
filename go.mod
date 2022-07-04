@@ -1,3 +1,3 @@
-module github.com/hakihet/buttercup
+module buttercup
 
-go 1.17
+go 1.18
