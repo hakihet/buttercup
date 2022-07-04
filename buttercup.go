@@ -29,9 +29,9 @@ func main() {
 	var s http.Server = http.Server{
 		Addr:              ":https",
 		Handler:           &Buttercup{},
-		ReadTimeout:       1,
-		ReadHeaderTimeout: 1,
-		IdleTimeout:       1,
+		ReadTimeout:       10,
+		ReadHeaderTimeout: 10,
+		IdleTimeout:       10,
 	}
 
 	done := func() <-chan struct{} {
